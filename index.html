@@ -1,0 +1,815 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Icon" href="./image-food/logo-food.jpg">
+    <title>ASIAN FOOD</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css">
+
+    <!-- CBN of Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="menu navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand text-uppercase fw-bold text-success" href="#">
+            <img src="./image-food/logo-food.jpg" class="rounded-circle" width="50px" height="50px" alt="">
+            Food
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item me-5 text-center">
+                <a class="nav-link text-uppercase fw-bold text-success tagA" aria-current="page" href="#">Home</a>
+              </li>
+            
+              <li class="nav-item me-5 text-center">
+                <a class="nav-link text-uppercase fw-bold text-success tagA" aria-current="page" href="#">About</a>
+              </li>
+
+              <li class="nav-item me-5 text-center">
+                <a class="nav-link text-uppercase fw-bold text-success tagA" aria-current="page" href="#">Menu</a>
+              </li>
+
+              <li class="nav-item me-5 text-center">
+                <a class="nav-link text-uppercase fw-bold text-success tagA" aria-current="page" href="#">Orders</a>
+              </li>
+
+              <li class="nav-item me-5 text-center">
+                <a class="nav-link text-uppercase fw-bold text-success tagA" aria-current="page" href="#">Contact</a>
+              </li>
+
+            </ul>
+
+
+            <ul class="navbar-nav">
+                <li class="nav-item text-center position-relative">
+                    <a class="nav-link text-uppercase fw-bold text-success tagA" aria-current="page" href="#">
+                        <i class="fa-solid fa-heart fs-5"></i>
+                        <span class="position-absolute top-0 badge bg-danger rounded-pill start-100 translate-middle">99+</span>
+                    </a>
+                </li>
+
+                <li class="nav-item ms-3 text-center">
+                    <a class="nav-link text-uppercase fw-bold text-success tagA" aria-current="page" href="#">
+                        <i class="fa-solid fa-user fs-5"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item ms-3 text-center position-relative">
+                    <a class="nav-link text-uppercase fw-bold text-success tagA" aria-current="page" href="#">
+                        <i class="fa-solid fa-cart-shopping fs-5"></i>
+                        <span class="position-absolute top-0 badge bg-danger rounded-pill start-100 translate-middle">99+</span>
+                    </a>
+                </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active position-relative">
+            <img src="./image-food/banner/background1.jpg" class="image_size" alt="...">
+            <div class="box_text">
+              <h1 class="display-2">Fresh Fruit</h1>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed pariatur reprehenderit perferendis praesentium esse quae. Autem rem soluta sit, voluptatum libero eaque nam culpa nisi, minus, facere cumque fugit quasi!</p>
+              <button type="button" class="btn btn-outline-danger w-25 py-3">Shop Now</button>
+            </div>
+          </div>
+          <div class="carousel-item position-relative">
+            <img src="./image-food/banner/banner2.jpg" class="image_size" alt="...">
+            <div class="box_text">
+              <h1 class="display-2 text-white">Fast Food</h1>
+              <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed pariatur reprehenderit perferendis praesentium esse quae. Autem rem soluta sit, voluptatum libero eaque nam culpa nisi, minus, facere cumque fugit quasi!</p>
+              <button type="button" class="btn btn-outline-primary w-25 py-3">Shop Now</button>
+            </div>
+          </div>
+          <div class="carousel-item position-relative">
+            <img src="./image-food/banner/bg-cake.jpg" class="image_size" alt="...">
+            <div class="box_text">
+              <h1 class="display-2 text-dark">Cup Cake</h1>
+              <p class="text-dark">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed pariatur reprehenderit perferendis praesentium esse quae. Autem rem soluta sit, voluptatum libero eaque nam culpa nisi, minus, facere cumque fugit quasi!</p>
+              <button type="button" class="btn btn-outline-success w-25 py-3">Shop Now</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- ============= item =========== -->
+      <div class="container my-5 py-5">
+        <div class="title text-center mb-5">
+          <h2 class="position-relative d-inline-block">New Menu</h2>
+        </div>
+        <div class="text-center">
+          <button type="button" class="btn rounded-pill border-danger py-2 px-3 me-2 btn-outline-dark">All</button>
+          <button type="button" class="btn rounded-pill border-danger py-2 px-3 me-2 btn-outline-dark">Best Seller</button>
+          <button type="button" class="btn rounded-pill border-danger py-2 px-3 me-2 btn-outline-dark">New Arrive</button>
+          <button type="button" class="btn rounded-pill border-danger py-2 px-3 me-2 btn-outline-dark">Featured</button>
+        </div>
+      </div>
+
+      <!-- ========== Sub Item =========== -->
+       <div class="container">
+        <div class="row g-4">
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="card">
+              <div class="card-top position-relative">
+                <img src="./image-food/Food/item-food/ch1.jpg" class="img-fluid" alt="">
+                <span class="span">Sale</span>
+              </div>
+              <div class="card-body text-center">
+                <h3 class="text-primary fw-bold">Chicken</h3>
+                <h5 class="text-danger">5.00 $</h5>
+                <p>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="card">
+              <div class="card-top position-relative">
+                <img src="./image-food/Food/item-food/ch1.jpg" class="img-fluid" alt="">
+                <span class="span">Sale</span>
+              </div>
+              <div class="card-body text-center">
+                <h3 class="text-primary fw-bold">Chicken</h3>
+                <h5 class="text-danger">5.00 $</h5>
+                <p>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="card">
+              <div class="card-top position-relative">
+                <img src="./image-food/Food/item-food/ch1.jpg" class="img-fluid" alt="">
+                <span class="span">Sale</span>
+              </div>
+              <div class="card-body text-center">
+                <h3 class="text-primary fw-bold">Chicken</h3>
+                <h5 class="text-danger">5.00 $</h5>
+                <p>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="card">
+              <div class="card-top position-relative">
+                <img src="./image-food/Food/item-food/ch1.jpg" class="img-fluid" alt="">
+                <span class="span">Sale</span>
+              </div>
+              <div class="card-body text-center">
+                <h3 class="text-primary fw-bold">Chicken</h3>
+                <h5 class="text-danger">5.00 $</h5>
+                <p>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="card">
+              <div class="card-top position-relative">
+                <img src="./image-food/Food/item-food/ch1.jpg" class="img-fluid" alt="">
+                <span class="span">Sale</span>
+              </div>
+              <div class="card-body text-center">
+                <h3 class="text-primary fw-bold">Chicken</h3>
+                <h5 class="text-danger">5.00 $</h5>
+                <p>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="card">
+              <div class="card-top position-relative">
+                <img src="./image-food/Food/item-food/ch1.jpg" class="img-fluid" alt="">
+                <span class="span">Sale</span>
+              </div>
+              <div class="card-body text-center">
+                <h3 class="text-primary fw-bold">Chicken</h3>
+                <h5 class="text-danger">5.00 $</h5>
+                <p>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="card">
+              <div class="card-top position-relative">
+                <img src="./image-food/Food/item-food/ch1.jpg" class="img-fluid" alt="">
+                <span class="span">Sale</span>
+              </div>
+              <div class="card-body text-center">
+                <h3 class="text-primary fw-bold">Chicken</h3>
+                <h5 class="text-danger">5.00 $</h5>
+                <p>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="card">
+              <div class="card-top position-relative">
+                <img src="./image-food/Food/item-food/ch1.jpg" class="img-fluid" alt="">
+                <span class="span">Sale</span>
+              </div>
+              <div class="card-body text-center">
+                <h3 class="text-primary fw-bold">Chicken</h3>
+                <h5 class="text-danger">5.00 $</h5>
+                <p>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star-half-stroke text-warning"></i>
+                  <i class="fa-solid fa-star"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+
+       <!-- ========== special =========== -->
+       <div class="container my-5 py-5">
+        <div class="title text-center mb-5">
+          <h2 class="position-relative d-inline-block text-danger">Special</h2>
+        </div>
+       </div>
+      
+       <div class="container mb-5">
+        <div class="row g-4">
+          <div class="special col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="card shadow-lg border-0 img-thumbnail position-relative">
+              <img src="./image-food/cake/cake/product-1.jpg" alt="">
+              <span class="span_heart">
+                <i class="fa-solid fa-heart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <h4 class="text-center">Chess Cup Cake</h4>
+              <p class="text-center" style="font-size: 25px;">4.99 $</p>
+              <button type="button" class="btn btn-danger rounded-pill">
+                <i class="fa-solid fa-cart-plus"></i>
+                Add Cart
+              </button>
+              <button type="button" class="btn btn-primary rounded-pill float-end">
+                <i class="fa-solid fa-eye"></i>
+                View
+              </button>
+            </div>
+          </div>
+
+
+          <div class="special col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="card shadow-lg border-0 img-thumbnail position-relative">
+              <img src="./image-food/cake/cake/product-2.jpg" alt="">
+              <span class="span_heart">
+                <i class="fa-solid fa-heart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <h4 class="text-center">Chess Cup Cake</h4>
+              <p class="text-center" style="font-size: 25px;">4.99 $</p>
+              <button type="button" class="btn btn-danger rounded-pill">
+                <i class="fa-solid fa-cart-plus"></i>
+                Add Cart
+              </button>
+              <button type="button" class="btn btn-primary rounded-pill float-end">
+                <i class="fa-solid fa-eye"></i>
+                View
+              </button>
+            </div>
+          </div>
+
+
+          <div class="special col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="card shadow-lg border-0 img-thumbnail position-relative">
+              <img src="./image-food/cake/cake/product-3.jpg" alt="">
+              <span class="span_heart">
+                <i class="fa-solid fa-heart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <h4 class="text-center">Chess Cup Cake</h4>
+              <p class="text-center" style="font-size: 25px;">4.99 $</p>
+              <button type="button" class="btn btn-danger rounded-pill">
+                <i class="fa-solid fa-cart-plus"></i>
+                Add Cart
+              </button>
+              <button type="button" class="btn btn-primary rounded-pill float-end">
+                <i class="fa-solid fa-eye"></i>
+                View
+              </button>
+            </div>
+          </div>
+
+
+          <div class="special col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="card shadow-lg border-0 img-thumbnail position-relative">
+              <img src="./image-food/cake/cake/product-4.jpg" alt="">
+              <span class="span_heart">
+                <i class="fa-solid fa-heart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <h4 class="text-center">Chess Cup Cake</h4>
+              <p class="text-center" style="font-size: 25px;">4.99 $</p>
+              <button type="button" class="btn btn-danger rounded-pill">
+                <i class="fa-solid fa-cart-plus"></i>
+                Add Cart
+              </button>
+              <button type="button" class="btn btn-primary rounded-pill float-end">
+                <i class="fa-solid fa-eye"></i>
+                View
+              </button>
+            </div>
+          </div>
+
+
+          <div class="special col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="card shadow-lg border-0 img-thumbnail position-relative">
+              <img src="./image-food/cake/cake/product-1.jpg" alt="">
+              <span class="span_heart">
+                <i class="fa-solid fa-heart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <h4 class="text-center">Chess Cup Cake</h4>
+              <p class="text-center" style="font-size: 25px;">4.99 $</p>
+              <button type="button" class="btn btn-danger rounded-pill">
+                <i class="fa-solid fa-cart-plus"></i>
+                Add Cart
+              </button>
+              <button type="button" class="btn btn-primary rounded-pill float-end">
+                <i class="fa-solid fa-eye"></i>
+                View
+              </button>
+            </div>
+          </div>
+
+
+          <div class="special col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="card shadow-lg border-0 img-thumbnail position-relative">
+              <img src="./image-food/cake/cake/product-2.jpg" alt="">
+              <span class="span_heart">
+                <i class="fa-solid fa-heart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <h4 class="text-center">Chess Cup Cake</h4>
+              <p class="text-center" style="font-size: 25px;">4.99 $</p>
+              <button type="button" class="btn btn-danger rounded-pill">
+                <i class="fa-solid fa-cart-plus"></i>
+                Add Cart
+              </button>
+              <button type="button" class="btn btn-primary rounded-pill float-end">
+                <i class="fa-solid fa-eye"></i>
+                View
+              </button>
+            </div>
+          </div>
+
+
+          <div class="special col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="card shadow-lg border-0 img-thumbnail position-relative">
+              <img src="./image-food/cake/cake/product-3.jpg" alt="">
+              <span class="span_heart">
+                <i class="fa-solid fa-heart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <h4 class="text-center">Chess Cup Cake</h4>
+              <p class="text-center" style="font-size: 25px;">4.99 $</p>
+              <button type="button" class="btn btn-danger rounded-pill">
+                <i class="fa-solid fa-cart-plus"></i>
+                Add Cart
+              </button>
+              <button type="button" class="btn btn-primary rounded-pill float-end">
+                <i class="fa-solid fa-eye"></i>
+                View
+              </button>
+            </div>
+          </div>
+
+
+          <div class="special col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="card shadow-lg border-0 img-thumbnail position-relative">
+              <img src="./image-food/cake/cake/product-4.jpg" alt="">
+              <span class="span_heart">
+                <i class="fa-solid fa-heart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <h4 class="text-center">Chess Cup Cake</h4>
+              <p class="text-center" style="font-size: 25px;">4.99 $</p>
+              <button type="button" class="btn btn-danger rounded-pill">
+                <i class="fa-solid fa-cart-plus"></i>
+                Add Cart
+              </button>
+              <button type="button" class="btn btn-primary rounded-pill float-end">
+                <i class="fa-solid fa-eye"></i>
+                View
+              </button>
+            </div>
+          </div>
+
+
+          <div class="special col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="card shadow-lg border-0 img-thumbnail position-relative">
+              <img src="./image-food/cake/cake/product-1.jpg" alt="">
+              <span class="span_heart">
+                <i class="fa-solid fa-heart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <h4 class="text-center">Chess Cup Cake</h4>
+              <p class="text-center" style="font-size: 25px;">4.99 $</p>
+              <button type="button" class="btn btn-danger rounded-pill">
+                <i class="fa-solid fa-cart-plus"></i>
+                Add Cart
+              </button>
+              <button type="button" class="btn btn-primary rounded-pill float-end">
+                <i class="fa-solid fa-eye"></i>
+                View
+              </button>
+            </div>
+          </div>
+
+
+          <div class="special col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="card shadow-lg border-0 img-thumbnail position-relative">
+              <img src="./image-food/cake/cake/product-2.jpg" alt="">
+              <span class="span_heart">
+                <i class="fa-solid fa-heart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <h4 class="text-center">Chess Cup Cake</h4>
+              <p class="text-center" style="font-size: 25px;">4.99 $</p>
+              <button type="button" class="btn btn-danger rounded-pill">
+                <i class="fa-solid fa-cart-plus"></i>
+                Add Cart
+              </button>
+              <button type="button" class="btn btn-primary rounded-pill float-end">
+                <i class="fa-solid fa-eye"></i>
+                View
+              </button>
+            </div>
+          </div>
+
+
+          <div class="special col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="card shadow-lg border-0 img-thumbnail position-relative">
+              <img src="./image-food/cake/cake/product-3.jpg" alt="">
+              <span class="span_heart">
+                <i class="fa-solid fa-heart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <h4 class="text-center">Chess Cup Cake</h4>
+              <p class="text-center" style="font-size: 25px;">4.99 $</p>
+              <button type="button" class="btn btn-danger rounded-pill">
+                <i class="fa-solid fa-cart-plus"></i>
+                Add Cart
+              </button>
+              <button type="button" class="btn btn-primary rounded-pill float-end">
+                <i class="fa-solid fa-eye"></i>
+                View
+              </button>
+            </div>
+          </div>
+
+
+          <div class="special col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="card shadow-lg border-0 img-thumbnail position-relative">
+              <img src="./image-food/cake/cake/product-4.jpg" alt="">
+              <span class="span_heart">
+                <i class="fa-solid fa-heart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <h4 class="text-center">Chess Cup Cake</h4>
+              <p class="text-center" style="font-size: 25px;">4.99 $</p>
+              <button type="button" class="btn btn-danger rounded-pill">
+                <i class="fa-solid fa-cart-plus"></i>
+                Add Cart
+              </button>
+              <button type="button" class="btn btn-primary rounded-pill float-end">
+                <i class="fa-solid fa-eye"></i>
+                View
+              </button>
+            </div>
+          </div>
+
+
+        </div>
+       </div>
+
+
+       <!-- ============= About ============ -->
+       <div class="container shadow my-5">
+        <div class="row ">
+          <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+            <img src="./image-food/banner/banner1.jpg" class="w-100 img-fluid" alt="">
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 py-5">
+              <h3 class="text-center">About</h3>
+              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero illo nisi hic quisquam maiores. Incidunt ipsam iusto fuga sunt quia.</p>
+              <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quo qui earum consequuntur nesciunt fuga beatae minus et! Inventore, labore. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi dolorum aliquid quaerat culpa, magnam ut eius? Aperiam ab eaque ipsam?</p>
+          </div>
+        </div>
+       </div>
+
+       <!-- ========== Rounded ============= -->
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-6 pic_round">
+              <img src="./image-food/Food/rounded/bg-12.jpg" class="w-100 h-100 img-thumbnail rounded-circle" alt="">
+            </div>
+
+            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-6 pic_round">
+              <img src="./image-food/Food/rounded/bg-12.jpg" class="w-100 h-100 img-thumbnail rounded-circle" alt="">
+            </div>
+
+            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-6 pic_round">
+              <img src="./image-food/Food/rounded/bg-12.jpg" class="w-100 h-100 img-thumbnail rounded-circle" alt="">
+            </div>
+
+            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-6 pic_round">
+              <img src="./image-food/Food/rounded/bg-12.jpg" class="w-100 h-100 img-thumbnail rounded-circle" alt="">
+            </div>
+
+            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-6 pic_round">
+              <img src="./image-food/Food/rounded/bg-12.jpg" class="w-100 h-100 img-thumbnail rounded-circle" alt="">
+            </div>
+
+            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-6 pic_round">
+              <img src="./image-food/Food/rounded/bg-12.jpg" class="w-100 h-100 img-thumbnail rounded-circle" alt="">
+            </div>
+
+          </div>
+        </div>
+
+      <!-- ========== New Arrived ========== -->
+       <div class="container my-5 py-5">
+        <h2 class="mb-5">New Arrive</h2>
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="row gy-4">
+              <div class="col-3">
+                <img src="./image-food/cake/cake/cake13.jpg" class="w-100 img-thumbnail" alt="">
+              </div>
+              <div class="col-9">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolorum voluptates placeat vitae iusto quas.</p>
+              </div>
+
+              <div class="col-3">
+                <img src="./image-food/cake/cake/cake13.jpg" class="w-100 img-thumbnail" alt="">
+              </div>
+              <div class="col-9">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolorum voluptates placeat vitae iusto quas.</p>
+              </div>
+
+              <div class="col-3">
+                <img src="./image-food/cake/cake/cake13.jpg" class="w-100 img-thumbnail" alt="">
+              </div>
+              <div class="col-9">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolorum voluptates placeat vitae iusto quas.</p>
+              </div>
+
+              <div class="col-3">
+                <img src="./image-food/cake/cake/cake13.jpg" class="w-100 img-thumbnail" alt="">
+              </div>
+              <div class="col-9">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolorum voluptates placeat vitae iusto quas.</p>
+              </div>
+
+              <div class="col-3">
+                <img src="./image-food/cake/cake/cake13.jpg" class="w-100 img-thumbnail" alt="">
+              </div>
+              <div class="col-9">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolorum voluptates placeat vitae iusto quas.</p>
+              </div>
+
+              <div class="col-3">
+                <img src="./image-food/cake/cake/cake13.jpg" class="w-100 img-thumbnail" alt="">
+              </div>
+              <div class="col-9">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolorum voluptates placeat vitae iusto quas.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="row gy-4">
+              <div class="col-3">
+                <img src="./image-food/cake/cake/cake13.jpg" class="w-100 img-thumbnail" alt="">
+              </div>
+              <div class="col-9">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolorum voluptates placeat vitae iusto quas.</p>
+              </div>
+
+              <div class="col-3">
+                <img src="./image-food/cake/cake/cake13.jpg" class="w-100 img-thumbnail" alt="">
+              </div>
+              <div class="col-9">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolorum voluptates placeat vitae iusto quas.</p>
+              </div>
+
+              <div class="col-3">
+                <img src="./image-food/cake/cake/cake13.jpg" class="w-100 img-thumbnail" alt="">
+              </div>
+              <div class="col-9">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolorum voluptates placeat vitae iusto quas.</p>
+              </div>
+
+              <div class="col-3">
+                <img src="./image-food/cake/cake/cake13.jpg" class="w-100 img-thumbnail" alt="">
+              </div>
+              <div class="col-9">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolorum voluptates placeat vitae iusto quas.</p>
+              </div>
+
+              <div class="col-3">
+                <img src="./image-food/cake/cake/cake13.jpg" class="w-100 img-thumbnail" alt="">
+              </div>
+              <div class="col-9">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolorum voluptates placeat vitae iusto quas.</p>
+              </div>
+
+              <div class="col-3">
+                <img src="./image-food/cake/cake/cake13.jpg" class="w-100 img-thumbnail" alt="">
+              </div>
+              <div class="col-9">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolorum voluptates placeat vitae iusto quas.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="row gy-4">
+              <div class="col-3">
+                <img src="./image-food/cake/cake/cake13.jpg" class="w-100 img-thumbnail" alt="">
+              </div>
+              <div class="col-9">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolorum voluptates placeat vitae iusto quas.</p>
+              </div>
+
+              <div class="col-3">
+                <img src="./image-food/cake/cake/cake13.jpg" class="w-100 img-thumbnail" alt="">
+              </div>
+              <div class="col-9">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolorum voluptates placeat vitae iusto quas.</p>
+              </div>
+
+              <div class="col-3">
+                <img src="./image-food/cake/cake/cake13.jpg" class="w-100 img-thumbnail" alt="">
+              </div>
+              <div class="col-9">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolorum voluptates placeat vitae iusto quas.</p>
+              </div>
+
+              <div class="col-3">
+                <img src="./image-food/cake/cake/cake13.jpg" class="w-100 img-thumbnail" alt="">
+              </div>
+              <div class="col-9">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolorum voluptates placeat vitae iusto quas.</p>
+              </div>
+
+              <div class="col-3">
+                <img src="./image-food/cake/cake/cake13.jpg" class="w-100 img-thumbnail" alt="">
+              </div>
+              <div class="col-9">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolorum voluptates placeat vitae iusto quas.</p>
+              </div>
+
+              <div class="col-3">
+                <img src="./image-food/cake/cake/cake13.jpg" class="w-100 img-thumbnail" alt="">
+              </div>
+              <div class="col-9">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolorum voluptates placeat vitae iusto quas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+
+       <!-- ========== Footer ============== -->
+        <div class="container-fluid bg-dark">
+          <div class="container py-5">
+            <div class="row">
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                <h2 class="text-white">Food</h2>
+                  <p class="text-white text-muted my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi molestias aliquid quaerat ducimus id harum soluta beatae aliquam quam laboriosam.</p>
+
+                  <span class="span_icon me-2 mb-2"><i class="fa-brands fa-twitter text-white"></i></span>
+                  <span class="span_icon me-2 mb-2"><i class="fa-brands fa-facebook text-white"></i></span>
+                  <span class="span_icon me-2 mb-2"><i class="fa-brands fa-youtube text-white"></i></span>
+                  <span class="span_icon me-2 mb-2"><i class="fa-brands fa-instagram text-white"></i></span>
+              </div>
+
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                <h2 class="text-white">Address</h2>
+                  <p class="text-white text-muted my-4"><i class="fa-solid fa-location-dot"></i> 123 Street, New Yor, USA</p>
+                 
+                  <p class="text-white text-muted my-4"> <i class="fa-solid fa-phone"></i> 0123456789</p>
+                  
+                  <p class="text-white text-muted my-4"> <i class="fa-solid fa-envelope"></i> chhimseangleng@gmail.com</p>
+
+              </div>
+
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                <h2 class="text-white">Quick Link</h2>
+                  <p class="text-white text-muted">> About Us</p>
+                  <p class="text-white text-muted">> Contact Us</p>
+                  <p class="text-white text-muted">> Our Services</p>
+                  <p class="text-white text-muted">> Term & Conitions</p>
+                  <p class="text-white text-muted">> Support</p>
+
+              </div>
+
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+                <h2 class="text-white">New Sletter</h2>
+                <p class="text-muted my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, expedita.</p>
+
+                <form action="">
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control shadow-none border-success" placeholder="Enter your email..." name="" id="">
+                    <button type="button" class="btn btn-outline-success border-start-0">Submit</button>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+</body>
+</html>
